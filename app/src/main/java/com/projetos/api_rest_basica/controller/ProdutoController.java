@@ -34,8 +34,8 @@ public class ProdutoController {
         return produtoService.criarProduto(produto);
     }
 
-    @DeleteMapping(/"{id}")
-    public ResponseEntity<Produto> deletarProduto(@PathVariable Long id){
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deletarProduto(@PathVariable Long id){
         produtoService.deletarProduto(id);
         return ResponseEntity.noContent().build();
     }
