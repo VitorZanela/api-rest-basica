@@ -58,6 +58,14 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+
+		<sourceDirectory>app/src/main/java</sourceDirectory>
+		<testSourceDirectory>app/src/test/java</testSourceDirectory>
+		<resources>
+			<resource>
+				<directory>app/src/main/resources</directory>
+			</resource>
+		</resources>
 	</build>
 
 </project>
