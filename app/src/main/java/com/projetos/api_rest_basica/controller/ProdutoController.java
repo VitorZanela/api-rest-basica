@@ -30,7 +30,7 @@ public class ProdutoController {
     }
 
     @PostMapping
-    public Produto criarProduto(Produto produto){
+    public Produto criarProduto(@RequestBody Produto produto){
         return produtoService.criarProduto(produto);
     }
 
@@ -39,5 +39,4 @@ public class ProdutoController {
         produtoService.deletarProduto(id);
         return ResponseEntity.noContent().build();
     }
-
 }
